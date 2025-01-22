@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Serviços", "02 - Serviços", "{D2FCFAB0-FE57-4058-9B4F-4D98486263C5}"
 EndProject
@@ -24,6 +24,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rota.Infra.IoC", "Rota.Infra.IoC\Rota.Infra.IoC.csproj", "{B2070613-E203-47EE-88A5-D88038FFFC7F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rota.Infra.TU", "Rota.Infra.TU\Rota.Infra.TU.csproj", "{4ABDD394-64B5-46BA-8C86-1FCBEC74DE0D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{CACB3E7F-FB09-48B2-955D-5C1B604B96D2}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
