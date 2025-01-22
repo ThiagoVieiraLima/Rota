@@ -6,18 +6,18 @@
 
 - IDE Visual Studio 2022
 - Utilizado o Net Core 3.1
-- Padr„o de desenvolvimento DDD
+- Padr√£o de desenvolvimento DDD
 - Entity Framework Sqlite
-- Teste unit·rio com o xUnit (ExecuÁ„o dos testes feitos na prÛpria IDE VS 2022)
-- DocumentaÁ„o e Swagger UI
-- ValidaÁ„o de dados com o FluentValidation
-- Padr„o de retorno HttpCode
+- Teste unit√°rio com o xUnit (Execu√ß√£o dos testes feitos na pr√≥pria IDE VS 2022)
+- Documenta√ß√£o e Swagger UI
+- Valida√ß√£o de dados com o FluentValidation
+- Padr√£o de retorno HttpCode
 
 ####################################################
 #### Acesso a interface swagger das APIs
 ####################################################
 
-O Projeto possue uma p·gina Swagger para visualizaÁ„o e teste das APIs
+O Projeto possue uma p√°gina Swagger para visualiza√ß√£o e teste das APIs
 
 https://localhost:44327/swagger
 
@@ -25,29 +25,38 @@ https://localhost:44327/swagger
 #### Carga Inicial de dados
 ####################################################
 
-Neste projeto existe uma API chamada (/api/Trecho/CargaInicial) que faz uma carga inicial com uns trechos de viagens prÈ definidos.
+Neste projeto existe uma API chamada (/api/Trecho/CargaInicial) que faz uma carga inicial com uns trechos de viagens pr√© definidos.
 
 Id = 1, Origem = "GRU", Destino = "BRC", Valor = 10
+
 Id = 2, Origem = "BRC", Destino = "SCL", Valor = 5 
+
 Id = 3, Origem = "GRU", Destino = "CDG", Valor = 75
+
 Id = 4, Origem = "GRU", Destino = "SCL", Valor = 20
+
 Id = 6, Origem = "ORL", Destino = "CDG", Valor = 5 
+
 Id = 7, Origem = "SCL", Destino = "ORL", Valor = 20
+
 Id = 8, Origem = "CDG", Destino = "ORL", Valor = 13
+
 Id = 9, Origem = "CDG", Destino = "GRU", Valor = 11.25 
+
 Id = 10, Origem = "CDG", Destino = "SCL", Valor = 9.14 
 
+
 ####################################################
-#### DefiniÁ„o do projeto
+#### Defini√ß√£o do projeto
 ####################################################
 
 # Rota de Viagem #
-Escolha a rota de viagem mais barata independente da quantidade de conexıes.
+Escolha a rota de viagem mais barata independente da quantidade de conex√µes.
 Para isso precisamos inserir as rotas.
  
 # API
 ## CRUD de cadastro de ROTAS ##
-* Dever· construir um endpoint de CRUD as rotas disponÌveis:
+* Dever√° construir um endpoint de CRUD as rotas dispon√≠veis:
 ```
 Origem: GRU, Destino: BRC, Valor: 10
 Origem: BRC, Destino: SCL, Valor: 5
@@ -66,20 +75,20 @@ Uma viajem de **GRU** para **CDG** existem as seguintes rotas:
 3. GRU - CDG ao custo de $75
 4. GRU - SCL - ORL - CDG ao custo de $45
  
-O melhor preÁo È da rota **1**, apesar de mais conexıes, seu valor final È menor.
+O melhor pre√ßo √© da rota **1**, apesar de mais conex√µes, seu valor final √© menor.
 O resultado da consulta deve ser: **GRU - BRC - SCL - ORL - CDG ao custo de $40**.
  
-Sendo assim, o endpoint de consulta dever· efetuar o calculo de melhor rota.
+Sendo assim, o endpoint de consulta dever√° efetuar o calculo de melhor rota.
  
 # API .net core
 1- Cadastro: CRUD de Rotas
-2- Consulta: Dever· ter 2 campos para consulta de rota: **Origem-Destino** e exibir o resultado da consulta chamando a API
-- Interface Rest (ObrigatÛrio)
-    A interface Rest dever· suportar o CRUD de rotas:
-    - ManipulaÁ„o de rotas, dados podendo ser persistidos em arquivo, bd local, etc...
+2- Consulta: Dever√° ter 2 campos para consulta de rota: **Origem-Destino** e exibir o resultado da consulta chamando a API
+- Interface Rest (Obrigat√≥rio)
+    A interface Rest dever√° suportar o CRUD de rotas:
+    - Manipula√ß√£o de rotas, dados podendo ser persistidos em arquivo, bd local, etc...
     - Consulta de melhor rota entre dois pontos.
 	- Documento swagger
-	- Testes unit·rios
+	- Testes unit√°rios
   Exemplo:
   ```
   Consulte a rota: GRU-CGD
@@ -92,9 +101,9 @@ Sendo assim, o endpoint de consulta dever· efetuar o calculo de melhor rota.
 2- Tela para consultar melhor rota 
 *Pode ser tudo em uma tela
  
-## Entreg·veis ##
-* Envie apenas o cÛdigo fonte
-* PreferÍncia no github (zipado)
-* Priorize/Estruturar sua aplicaÁ„o seguindo as boas pr·ticas de desenvolvimento
-* Evite o uso de frameworks ou bibliotecas externas ‡ linguagem
+## Entreg√°veis ##
+* Envie apenas o c√≥digo fonte
+* Prefer√™ncia no github (zipado)
+* Priorize/Estruturar sua aplica√ß√£o seguindo as boas pr√°ticas de desenvolvimento
+* Evite o uso de frameworks ou bibliotecas externas √† linguagem
 
