@@ -1,8 +1,6 @@
 # Projeto Rota
 
-####################################################
-#### Arquitetura do projeto
-####################################################
+## Arquitetura do projeto
 
 - IDE Visual Studio 2022
 - Utilizado o Net Core 3.1
@@ -13,17 +11,13 @@
 - Validação de dados com o FluentValidation
 - Padrão de retorno HttpCode
 
-####################################################
-#### Acesso a interface swagger das APIs
-####################################################
+## Acesso a interface swagger das APIs
 
 O Projeto possue uma página Swagger para visualização e teste das APIs
 
 https://localhost:44327/swagger
 
-####################################################
-#### Carga Inicial de dados
-####################################################
+## Carga Inicial de dados
 
 Neste projeto existe uma API chamada (/api/Trecho/CargaInicial) que faz uma carga inicial com uns trechos de viagens pré definidos.
 
@@ -45,10 +39,7 @@ Id = 9, Origem = "CDG", Destino = "GRU", Valor = 11.25
 
 Id = 10, Origem = "CDG", Destino = "SCL", Valor = 9.14 
 
-
-####################################################
-#### Definição do projeto
-####################################################
+# Definição do projeto
 
 # Rota de Viagem #
 Escolha a rota de viagem mais barata independente da quantidade de conexões.
